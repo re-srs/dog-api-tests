@@ -53,6 +53,7 @@ mvn allure:serve
 ```
 
 O relatório será aberto automaticamente no navegador com detalhes dos testes.
+“O relatório Allure pode ser visualizado executando os testes localmente.”
 
 ---
 
