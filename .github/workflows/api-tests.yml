@@ -2,32 +2,6 @@ name: API Tests
 
 on:
   push:
-   branches: [ main, master ]
-  pull_request:
-   branches: [ main, master ]
-  workflow_dispatch: 
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Run tests
-        run: mvn clean test
-
-     name: API Tests
-
-on:
-  push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
